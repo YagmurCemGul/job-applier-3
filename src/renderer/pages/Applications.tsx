@@ -167,27 +167,24 @@ const Applications: React.FC = () => {
                             width: '6px', 
                             height: '6px', 
                             backgroundColor: '#10b981', 
-                            borderRadius: '50%',
-                            title: 'Cover letter attached'
-                          }}></span>
+                            borderRadius: '50%'
+                          }} title="Cover letter attached"></span>
                         )}
                         {application.tailoredCV && (
                           <span style={{ 
                             width: '6px', 
                             height: '6px', 
                             backgroundColor: '#3b82f6', 
-                            borderRadius: '50%',
-                            title: 'CV tailored'
-                          }}></span>
+                            borderRadius: '50%'
+                          }} title="CV tailored"></span>
                         )}
                         {Object.keys(application.answers).length > 0 && (
                           <span style={{ 
                             width: '6px', 
                             height: '6px', 
                             backgroundColor: '#f59e0b', 
-                            borderRadius: '50%',
-                            title: 'Questions answered'
-                          }}></span>
+                            borderRadius: '50%'
+                          }} title="Questions answered"></span>
                         )}
                       </div>
                     </div>

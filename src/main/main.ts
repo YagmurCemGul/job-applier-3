@@ -153,11 +153,11 @@ class Application {
 
     // Keychain operations
     ipcMain.handle('keychain:getPassword', async (_, service, account) => {
-      return await this.keychainService.getPassword(service, account);
+      return await this.keychainService.getPassword(account);
     });
 
     ipcMain.handle('keychain:setPassword', async (_, service, account, password) => {
-      return await this.keychainService.setPassword(service, account, password);
+      return await this.keychainService.setPassword(account, password);
     });
 
     // Logging

@@ -11,7 +11,7 @@ import { DATABASE_TABLES } from '../../shared/constants';
 import { LoggerService } from '../services/LoggerService';
 
 export class DatabaseService {
-  private db: Database.Database;
+  private db: any;
   private logger: LoggerService;
 
   constructor(logger: LoggerService) {

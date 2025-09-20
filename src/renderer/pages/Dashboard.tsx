@@ -81,7 +81,7 @@ const Dashboard: React.FC = () => {
               </div>
             </div>
           ) : (
-            <div style={{ space: '16px' }}>
+            <div style={{ display: 'flex', flexDirection: 'column', gap: '16px' }}>
               {recentJobs.map((job) => (
                 <div key={job.id} style={{ 
                   padding: '16px', 
@@ -124,7 +124,7 @@ const Dashboard: React.FC = () => {
               </div>
             </div>
           ) : (
-            <div style={{ space: '16px' }}>
+            <div style={{ display: 'flex', flexDirection: 'column', gap: '16px' }}>
               {recentApplications.map((application) => {
                 const job = state.jobs.find(j => j.id === application.jobId);
                 return (

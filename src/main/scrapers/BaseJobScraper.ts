@@ -49,7 +49,9 @@ export abstract class BaseJobScraper implements BaseScraper {
     const page = await browser.newPage();
     
     // Set random user agent
-    await page.setUserAgent(this.getRandomUserAgent());
+    await page.setExtraHTTPHeaders({
+      'User-Agent': this.getRandomUserAgent()
+    });
     
     // Set viewport to random size within reasonable bounds
     await page.setViewportSize({
